@@ -84,7 +84,7 @@
 					<transformers>
 						<transformer
 							implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-							<mainClass>tech.sda.starter.hadoop</mainClass>
+							<mainClass>tech.sda.starter.hadoop.WordCount</mainClass>
 						</transformer>
 					</transformers>
 					<finalName>${project.artifactId}-${project.version}-with-dependencies</finalName>
