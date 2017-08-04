@@ -16,4 +16,4 @@ To run the application, execute the following steps:
 2. Build the Docker image:
 `docker build --rm=true -t bde/mapreduce-app .`
 3. Run the Docker container:
-`docker run --name my-mapreduce-app --net hadoop -d bde/mapreduce-app`
+`docker run --name my-mapreduce-app --network hadoop --env-file ./config/hadoop/hadoop.env -d bde/mapreduce-app`
